@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Routes and Roots · Ferries of the Lesser Antilles</title>
+<meta name="description" content="Interactive map of inter-island ferry routes in the Lesser Antilles and the five regional networks they draw.">
+<style>
+  :root { --fond: #d6e6f8; --encre: #1c2233; --doux: #4a5570; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--encre); font-family: Georgia, 'Noto Serif', serif; }
+  main { max-width: 1500px; margin: 0 auto; padding: 12px 16px 28px; }
+  .carte { width: 100%; aspect-ratio: 1400 / 990; display: block; border: 0; overflow: hidden; }
+  .texte { max-width: 760px; margin: 18px auto 0; line-height: 1.55; font-size: 16px; }
+  .texte p { margin: 0 0 12px; }
+  .texte .petit { font-size: 13.5px; color: var(--doux); }
+  a { color: #0a3a8c; }
+</style>
+</head>
+<body>
+<main>
+  <object class="carte" type="image/svg+xml" data="ferries_interactif.svg"
+          aria-label="Interactive map of ferry routes in the Lesser Antilles">
+    <img src="ferries_interactif.svg" alt="Map of ferry routes in the Lesser Antilles" style="width:100%">
+  </object>
+  <div class="texte">
+    <p>Ferries do more than move people: in the Lesser Antilles they trace invisible borders.
+    Mapped as networks rather than single routes, they reveal five regional groups shaped by language,
+    history and mobility policies, and show who is connected to whom.</p>
+    <p class="petit">Hover a route or a port for details. Click the legend to filter line types or isolate
+    a network. Click a magnifier on the map to zoom in, and again to zoom out.</p>
+    <p class="petit">Map by Estelle Sérèmes for the #30DayMapChallenge 2026, Day 24: Network.
+    Data: Natural Earth, ferryroutes.com (2025). Made with QGIS; interactions added with
+    <a href="https://igarun.univ-nantes.io/CartABl/">CartABl</a> (IGARUN, Nantes Université).</p>
+  </div>
+</main>
+</body>
+</html>
