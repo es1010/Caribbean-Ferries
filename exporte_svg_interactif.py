@@ -460,7 +460,7 @@ def div(classe, contenu):
 
 
 def svg_fiches():
-    x, y, w, h = 22, 128, 292, 318
+    x, y, w, h = 22, 118, 292, 392
     fo = f'<foreignObject x="{x + 14}" y="{y + 12}" width="{w - 28}" height="{h - 20}">'
     cadre = f'<rect class="fichefond" x="{x}" y="{y}" width="{w}" height="{h}" rx="8"/>'
     aide = (f'<g id="fiche-aide">{cadre}{fo}'
@@ -629,7 +629,7 @@ def construire():
     cw, ch = px(CADRE_PX[2] - CADRE_PX[0]), px(CADRE_PX[3] - CADRE_PX[1])
     # Échelle graphique : 100 km au sol vers 15° N
     km100 = 100000 / math.cos(math.radians(15)) / _M_PAR_PX * K
-    ex, ey = 34, 668
+    ex, ey = 34, 726
     echelle = (f'<g id="echelle"><path d="M{ex},{ey - 5}V{ey}H{f1(ex + km100)}V{ey - 5}M{f1(ex + km100 / 2)},{ey - 4}V{ey}" '
                'fill="none" stroke="#111" stroke-width="1"/>'
                f'<text x="{f1(ex + km100 / 2)}" y="{ey - 9}" class="situ">50</text>'
@@ -682,7 +682,7 @@ def construire():
 <g id="legende">
 {svg_legende(routes)}
 </g>
-{svg_situation(couche_pays, 22, 470, 292, 168)}
+{svg_situation(couche_pays, 22, 528, 292, 168)}
 {echelle}
 <g id="fiches">
 {svg_fiches()}

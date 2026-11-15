@@ -20,7 +20,10 @@ static map published for the 2025 challenge (Day 26: Transport).
 |---|---|
 | `index.html` | Page that embeds the map |
 | `ferries_interactif.svg` | The map: vector drawing, styles, interaction rules and the CartABl runtime, all in one file |
-| `scripts/exporte_svg_interactif.py` | PyQGIS script that generates the SVG from the QGIS project |
+| `exporte_svg_interactif.py` | PyQGIS script that generates the SVG from the QGIS project |
+| `cartabl.js` | CartABl runtime, embedded in the SVG by the script |
+| `apercu.png` | Preview image shown when the link is shared |
+| `favicon.*`, `apple-touch-icon.png` | Browser tab icons |
 | `LICENSE` | GNU GPL v3 |
 
 ## How it is made
